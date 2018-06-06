@@ -1,5 +1,6 @@
 # Dizornator
-EARLY BUILD - Version 0.1.0
+# EARLY BUILD - Version 0.1.0
+
 Dizornator is my own coded bot for my discord server. I learn how to code with this project. You can invite him but I am not respo
 
   - Level-up system (WIP)
@@ -21,3 +22,6 @@ I want to thank you:
   - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/coding-guides/using-persistentcollections.html
 # License
 MIT
+
+#### Social
+[Twitter](twitter.com/SuperDizor) for questions

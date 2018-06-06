@@ -25,15 +25,12 @@ client.on("guildDelete", guild => {
 });
 
 
-client.on("message", async message => {
-  // This event will run on every single message received, from any channel or DM.
+client.on("message", async message => {  // Analyze every messages
   
-  // It's good practice to ignore other bots. This also makes your bot ignore itself
-  // and not get into a spam loop (we call that "botception").
+  // Ignore Bots messages (including myself)
   if(message.author.bot) return;
   
-  // Also good practice to ignore any message that does not start with our prefix, 
-  // which is set in the configuration file.
+  // Ignore any message that does not start with our prefix, 
   if(message.content.indexOf(config.prefix) !== 0) return;
   
   // Here we separate our "command" name, and our "arguments" for the command. 
@@ -46,8 +43,6 @@ client.on("message", async message => {
   // Let's go with a few common example commands! Feel free to delete or change those.
   
   if(command === "ping") {
-    // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
-    // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
