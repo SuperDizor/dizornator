@@ -1,0 +1,10 @@
+{
+  "name": "Dizornator",
+  "version": "0.1.0",
+  "description": "Discord bot for Plays.TV",
+  "main": "app.js",
+  "author": "SuperDizor",
+  "dependencies": {
+    "enmap": "^2.6.1"
+  }
+}
