@@ -4,6 +4,11 @@
   "description": "Discord bot for Plays.TV",
   "main": "app.js",
   "author": "SuperDizor",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/SuperDizor/dizornator.git"
+  },
+  "license": "(MIT)",
   "dependencies": {
     "discord.js": "^11.3.2"
   }

@@ -1,1 +1,4 @@
 config.json
+scores.sqlite
+scores.sqlite-shm
+scores.sqlite-wal
