@@ -24,4 +24,4 @@ I want to thank you:
 MIT
 
 #### Social
-[Twitter](twitter.com/SuperDizor) for questions
+[Twitter](https://twitter.com/SuperDizor) for questions
