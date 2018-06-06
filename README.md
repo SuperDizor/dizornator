@@ -14,6 +14,12 @@ Dizornator is my own coded bot for my discord server. I learn how to code with t
   - Music Player
 
 ## Installation  
+#### Prerequisite
+ - In an **admin** command prompt or powershell, run `npm i -g --production windows-build-tools`. 
+ -  Close all open command prompts for your bot, or the following won't work.
+ - `npm i discord.js better-sqlite3`
+
+
 #### Create a new file in project root
 config.json
 
@@ -23,7 +29,6 @@ config.json
   "prefix" : "+"
 }
 ```
-
 
 ## Thank you:
   - Node.js

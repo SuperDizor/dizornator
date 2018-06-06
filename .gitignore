@@ -2,3 +2,5 @@ config.json
 scores.sqlite
 scores.sqlite-shm
 scores.sqlite-wal
+node_modules/integer/build/Release/obj/integer/integer.tlog/link-VCTIP.delete.98.tlog
+*.tlog
