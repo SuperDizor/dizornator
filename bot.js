@@ -15,13 +15,31 @@ client.on("ready", () => {
     sql.pragma("synchronous = 1");
     sql.pragma("journal_mode = wal");
   }
-
   // And then we have two prepared statements to get and set the score data.
   client.getScore = sql.prepare("SELECT * FROM scores WHERE user = ? AND guild = ?");
   client.setScore = sql.prepare("INSERT OR REPLACE INTO scores (id, user, guild, points, level) VALUES (@id, @user, @guild, @points, @level);");
+
+  // This event will run if the bot starts, and logs in, successfully.
+  console.log('\x1b[42m%s\x1b[0m',`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+  // Example of changing the bot's playing game to something useful. `client.user` is what the
+  // docs refer to as the "ClientUser".
+  client.user.setActivity(`Serving ${client.guilds.size} servers`);
+
 });
 
-client.on("message", message => {
+client.on("guildCreate", guild => {
+  // This event triggers when the bot joins a guild.
+  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+  client.user.setActivity(`Serving ${client.guilds.size} servers`);
+});
+
+client.on("guildDelete", guild => {
+  // this event triggers when the bot is removed from a guild.
+  console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
+  client.user.setActivity(`Serving ${client.guilds.size} servers`);
+});
+
+client.on("message", async message => {
   // Ignore bots, DMs and group messages.
   if (message.author.bot || !message.guild) return;
 

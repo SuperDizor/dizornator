@@ -1,7 +1,7 @@
 # Dizornator
 ### EARLY BUILD - Version 0.1.0
 
-Dizornator is my own coded bot for my discord server. I learn how to code with this project. You can invite him but I am not respo
+Dizornator is my own coded (with a lots of help) bot for my discord server. I want to learn how to code with projects like this one. You can invite him but I am not responsable for spam or malfunction.
 
   - Level-up system (WIP)
   - Custom Commands
