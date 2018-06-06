@@ -12,12 +12,13 @@ Dizornator is my own coded bot for my discord server. I learn how to code with t
   - Level-up system
   - Plays.TV feed post in text channel from selected Plays.tv users
   - Music Player
-  
-## Create a new file in project root
+
+## Installation  
+#### Create a new file in project root
 config.json
 
 ```sh
-{ 
+{
   "token"  : "YOUR TOKEN KEY HERE",
   "prefix" : "+"
 }
@@ -30,7 +31,7 @@ config.json
   - https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3
   - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/coding-guides/storing-data-in-an-sqlite-file.html
   - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/coding-guides/using-persistentcollections.html
-  
+
 ## License
 MIT
 
