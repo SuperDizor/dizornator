@@ -198,6 +198,12 @@ client.on("message", async message => {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
 
+  // If the message is "what is my avatar"
+  if (command === 'avatar') {
+    // Send the user's avatar URL
+    message.reply(message.author.avatarURL);
+  }
+
   if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
 
